@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona unOfficial Fanpage</title>
+      <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #003893; /* Barcelona blue */
+            padding: 15px 30px;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu > li {
+            position: relative;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #002266;
+            min-width: 150px;
+            z-index: 1;
+        }
+
+        .dropdown li {
+            border-bottom: 1px solid #0040ff;
+        }
+
+        .menu li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #0044cc;
+        }
+
+        /* Page Title */
+        .page-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .page-content h4 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Barça Fanpage</div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Players</a></li>
+                        <li><a href="#">Coaches</a></li>
+                        <li><a href="#">Legends</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Matches</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Upcoming</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Standings</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Club History</a></li>
+                        <li><a href="#">Stadium</a></li>
+                        <li><a href="#">Fan Stories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-content">
+        <h4>Hello, my friends, and welcome to the</h4>
+        <h1>Barcelona unOfficial Fanpage</h1>
+    </div>
+
+</body>
+</html>
